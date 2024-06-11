@@ -81,6 +81,9 @@ export default function Navbar() {
                   </IconButton>
                 ))}
               </div>
+              <Link className="text-white" to="/login/">
+                Login
+              </Link>
             </div>
           </div>
         </div>
@@ -126,7 +129,10 @@ export default function Navbar() {
                                 }`}
                               >
                                 {childItem.isLinkToOutside ? (
-                                  <a href={childItem.path || ""} target="_blank">
+                                  <a
+                                    href={childItem.path || ""}
+                                    target="_blank"
+                                  >
                                     {childItem.label}
                                   </a>
                                 ) : (
